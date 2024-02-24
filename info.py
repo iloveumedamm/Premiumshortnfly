@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '24010108'))
 API_HASH = environ.get('API_HASH', '8d89700b2fc09a3aa6c906cbed65b040')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6233167923:AAHWhf3OCMhJHwaO3K6CZemybz01ApcjQkQ")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -29,9 +29,9 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/b2b7504687ec
 CODE = (environ.get('CODE', 'https://graph.org/file/b2b7504687ec41b794b9a.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
-STREAM_API = (environ.get('STREAM_API', 'ae0832f39e24094a0661626a792e6a2b8880e310'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HowToOpenLinkHP/69'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'shortnfly.com'))
+STREAM_API = (environ.get('STREAM_API', 'b7510516ced301725fdcf130ab42d95e39440e8a'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/streaamdb5/3'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5791145987').split()]
@@ -50,9 +50,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", 1)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://lajihi2115:lgAEiuZHs917nZgy@cluster0.lx88eg8.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://benoj60137:TmFajHsZTzwZjpNo@cluster0.a5feauq.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Teleg')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'nboll')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
@@ -60,7 +60,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/') # How to open tutorial
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortnfly.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'ad31cc9a43a69427f67fea68bb5dd6361498fe07')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'b7510516ced301725fdcf130ab42d95e39440e8a')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 1))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
@@ -88,7 +88,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "0")), True)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "0")), True)
 
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
 
