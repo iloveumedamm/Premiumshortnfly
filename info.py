@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '24010108'))
 API_HASH = environ.get('API_HASH', '8d89700b2fc09a3aa6c906cbed65b040')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6233167923:AAHWhf3OCMhJHwaO3K6CZemybz01ApcjQkQ")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6800223017:AAHyIg84MwTOrfKJm1rJFzejI59Tkirv9-0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -30,7 +30,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/b2b7504687ec41b794b9a.jpg'))
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'shortnfly.com'))
-STREAM_API = (environ.get('STREAM_API', 'b7510516ced301725fdcf130ab42d95e39440e8a'))
+STREAM_API = (environ.get('STREAM_API', 'ad31cc9a43a69427f67fea68bb5dd6361498fe07'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/streaamdb5/3'))
 
 # Admins, Channels & Users
@@ -50,9 +50,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", 1)) # True if you want no results messages in Log Channel
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://benoj60137:TmFajHsZTzwZjpNo@cluster0.a5feauq.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://veyabim694:4GFKauf2DayduFX4@cluster0.11utwrn.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'nboll')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'streaamdbbot')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
@@ -60,7 +60,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/') # How to open tutorial
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortnfly.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b7510516ced301725fdcf130ab42d95e39440e8a')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'ad31cc9a43a69427f67fea68bb5dd6361498fe07')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 1))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
