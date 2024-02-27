@@ -55,13 +55,13 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'streaamdbbot')
 
 # Verify
-VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
+VERIFY = bool(environ.get('VERIFY', 1)) # Verification On ( True ) / Off ( False )
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortnfly.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'ad31cc9a43a69427f67fea68bb5dd6361498fe07')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 1))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'krishnalink.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '3ecc329283a99d092c9125060b3138247b0a07e5')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 0))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
