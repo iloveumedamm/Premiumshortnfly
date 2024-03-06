@@ -29,9 +29,9 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/b2b7504687ec
 CODE = (environ.get('CODE', 'https://graph.org/file/b2b7504687ec41b794b9a.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'shortnfly.com'))
-STREAM_API = (environ.get('STREAM_API', 'ad31cc9a43a69427f67fea68bb5dd6361498fe07'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/streaamdb5/3'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'bzearn.com'))
+STREAM_API = (environ.get('STREAM_API', '414512a828afd2b0b81a715260a7c58b815c6ce0'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/streaamdb5/4'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5791145987').split()]
@@ -55,20 +55,20 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'streaamdbbot')
 
 # Verify
-VERIFY = bool(environ.get('VERIFY', 1)) # Verification On ( True ) / Off ( False )
+VERIFY = bool(environ.get('VERIFY', 0)) # Verification On ( True ) / Off ( False )
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'krishnalink.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '3ecc329283a99d092c9125060b3138247b0a07e5')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 0))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bzearn.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '414512a828afd2b0b81a715260a7c58b815c6ce0')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 1))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+YcpasbO0O6A2YWY1')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/streaamdb')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/streaamdb5/3') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/streaamdb5/4') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʜᴘ')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001919093361')) #Log channel id ( make sure bot is admin )
