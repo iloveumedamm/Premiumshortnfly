@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/24066cf7e315
 CODE = (environ.get('CODE', 'https://graph.org/file/24066cf7e315e12d3ac38.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'bzearn.com'))
-STREAM_API = (environ.get('STREAM_API', '414512a828afd2b0b81a715260a7c58b815c6ce0'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'shortnfly.com'))
+STREAM_API = (environ.get('STREAM_API', '3bc1d5679b15a09378ff49859f216cb74ae3d907'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/streaamdb5/4'))
 
 # Admins, Channels & Users
@@ -59,8 +59,8 @@ VERIFY = bool(environ.get('VERIFY', 0)) # Verification On ( True ) / Off ( False
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bzearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '414512a828afd2b0b81a715260a7c58b815c6ce0')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortnfly.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '3bc1d5679b15a09378ff49859f216cb74ae3d907')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 1))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
