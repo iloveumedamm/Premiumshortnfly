@@ -30,7 +30,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/24066cf7e315e12d3ac38.jpg'))
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'bzearn.com'))
-STREAM_API = (environ.get('STREAM_API', '414512a828afd2b0b81a715260a7c58b815c6ce0'))
+STREAM_API = (environ.get('STREAM_API', '448ac9f0f4ce7764cc189780ae0b31925a60e77a'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/streaamdb5/4'))
 
 # Admins, Channels & Users
@@ -60,7 +60,7 @@ HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/') # How to open tutorial
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bzearn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '414512a828afd2b0b81a715260a7c58b815c6ce0')
+SHORTLINK_API = environ.get('SHORTLINK_API', '448ac9f0f4ce7764cc189780ae0b31925a60e77a')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', 1))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
